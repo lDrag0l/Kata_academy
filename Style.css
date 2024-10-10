@@ -75,7 +75,7 @@ body {
 }
 
 .Main__name::before {
-    content: url("Icons/highlight.svg");
+    content: url("./Icons/highlight.svg");
     margin-right: 12px;
     margin-top: 6px;
 }
