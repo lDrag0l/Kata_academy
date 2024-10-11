@@ -99,6 +99,7 @@ ul {
 }
 
 .Main__link {
+    border-radius: 6px;
     border: 2px solid transparent;
 }
 
@@ -109,7 +110,6 @@ ul {
     padding: 8px;
     padding-left: 16px;
     padding-right: 9px;
-    border-radius: 6px;
     color: #7E7E82;
 }
 
