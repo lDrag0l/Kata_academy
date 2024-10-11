@@ -9,6 +9,7 @@ body {
 .Header {
     width: 100%;
     height: 88px;
+    border-bottom: 1px solid #D9FFF5;
 }
 
 .Header__container {
@@ -22,6 +23,8 @@ body {
     height: inherit;
     align-items: center;
     width: 50%;
+    padding-left: 16px;
+    gap: 16px;
 }
 
 .Header__container-right {
@@ -29,38 +32,37 @@ body {
     height: inherit;
     justify-content: flex-end;
     align-items: center;
+    padding-right: 16px;
+    gap: 16px;
     width: 50%;
 }
 
-.Header__burger {
-    margin: 0 16px;
+.Header button {
+    cursor: pointer;
+    border: none;
+    padding: 0;
+    background-color: #FFFFFF;
 }
 
 .Header__group {
-    margin-right: 16px;
+    display: flex;
 }
 
-.Header__checkstatus {
-    margin: 0 16px;
-}
-
-.Header__repair {
-    margin-left: 20px;
-}
-
-.Header__divider-first {
+.Header__group::before {
+    content: url("./Icons/divider.svg");
+    align-self: center;
     display: none;
 }
 
-.Header__call {
-    display: none;
+.Header__group::after {
+    content: url("./Icons/divider.svg");
+    align-self: center;
+    margin-left: 16px;
 }
 
-.Header__chat {
-    display: none;
-}
-
-.Header__profile {
+.Header__links-visible-768 {
+    display: flex;
+    gap: 16px;
     display: none;
 }
 
@@ -71,13 +73,13 @@ body {
     align-items: center;
     color: black;
     margin: 0;
-    margin-top: 24px;
 }
 
 .Main__name::before {
     content: url("./Icons/highlight.svg");
+    align-self: center;
+    margin-top: 5px;
     margin-right: 12px;
-    margin-top: 6px;
 }
 
 .Main__links-visible-1120 {
@@ -92,9 +94,12 @@ ul {
     overflow-x: scroll;
 }
 
-
 .Main__navigation {
     padding-left: 16px;
+}
+
+.Main__link {
+    border: 2px solid transparent;
 }
 
 .Main__link a {
@@ -104,20 +109,25 @@ ul {
     padding: 8px;
     padding-left: 16px;
     padding-right: 9px;
+    border-radius: 6px;
+    color: #7E7E82;
 }
 
 .Main__link:hover {
-    border-radius: 6px;
+    border-color: #B8FFEC;
     background-color: #FFFFFF;
-    border: 2px solid #B8FFEC;
 }
 
-.Main__section-first p {
-    display: none;
+.Main__text-container p {
+    color: #1B1C21;
+    font-size: 14px;
 }
 
 .Main__text-container {
-    font-size: 14px;
+    min-height: 100px;
+    margin-left: 16px;
+    height: 108px;
+    overflow: hidden;
 }
 
 .Main__text {
@@ -134,42 +144,45 @@ ul {
 
 .Main__button {
     display: flex;
-    align-items: center;
+    padding: 0;
+    background-color: #F8F8F8;
+    border: none;
+    cursor: pointer;
     margin: 0;
-    margin-left: 40px;
+    margin-left: 24px;
+    padding-top: 10px;
     margin-bottom: 16px;
 }
 
 .Main__button::before {
     content: url("/Icons/icon.svg");
+    align-self: center;
     margin-right: 8px;
-    margin-top: 5px;
 }
 
 @media screen and (width > 767px) {
-    .Header__divider-first {
+    .Header__group::after {
+        display: none;
+    }
+
+    .Header__group::before {
         display: block;
+        margin: 0 4px;
         margin-right: 16px;
     }
 
-    .Header__call {
-        display: block;
+    .Header__links-visible-768 {
+        display: flex;
     }
 
-    .Header__chat {
-        display: block;
-        margin-left: 16px;
-    }
-
-    .Header__profile {
-        display: block;
-        margin-right: 20px;
-        margin-left: 16px;
+    .Header__links-visible-768::after {
+        content: url("./Icons/divider.svg");
+        margin: 0 4px;
+        align-self: center;
     }
 
     .Main__container {
         display: flex;
-        margin-top: 40px;
     }
 
     .Main__text {
@@ -180,6 +193,7 @@ ul {
         width: 312px;
         margin-left: 24px;
         margin-right: 48px;
+        height: 146px;
     }
 
     .Main__text-visible-728 {
@@ -193,7 +207,7 @@ ul {
     }
 
     .Main__button {
-        margin-left: 0;
+        margin-left: 30px;
     }
 }
 
@@ -210,7 +224,8 @@ ul {
     }
 
     ul {
-        overflow: auto;
+        overflow: hidden;
+        flex-wrap: wrap;
     }
 
     .Main__container {
@@ -219,6 +234,7 @@ ul {
 
     .Main__text-container {
         width: 490px;
+        height: 170px;
         margin-left: 34px;
         margin-right: 36px;
     }
@@ -233,12 +249,12 @@ ul {
     }
 
     .Main__section-first {
-        width: 1120px;
+        width: 95%;
     }
 
     .Main__name-container {
         display: flex;
-        height: 50px;
+        align-items: center;
         justify-content: space-between;
     }
 
@@ -271,13 +287,11 @@ ul {
         margin-right: 32px;
     }
 
-    .Main__link {
-        margin-left: 16px;
+    .Main__button {
+        margin-bottom: 0;
     }
 
-    .Main__section-first p {
-        display: block;
-        font-size: 16px;
-        margin-left: 56px;
+    .Main__navigation {
+        margin-left: 26px;
     }
 }
