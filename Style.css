@@ -155,7 +155,7 @@ ul {
 }
 
 .Main__button::before {
-    content: url("/Icons/icon.svg");
+    content: url("./Icons/icon.svg");
     align-self: center;
     margin-right: 8px;
 }
