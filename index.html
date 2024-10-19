@@ -4,18 +4,19 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Практическая задача 3.1.4</title>
+    <title>Практическая задача 4.1.3</title>
     <link rel="stylesheet" href="Style.css">
     <link rel="stylesheet" href="Fonts/TTLakes/stylesheet.css">
 </head>
 
 <body>
+
     <header class="Header">
         <div class="Header__container">
             <div class="Header__container-left">
 
                 <button>
-                    <img src="Icons/burger.svg" alt="Menu">
+                    <img src="Icons/burger-on.svg" alt="Menu">
                 </button>
 
                 <div class="Header__group">
@@ -103,6 +104,61 @@
             </div>
         </section>
     </main>
+
+    <div class="Mobile-menu">
+        <div class="Mobile-menu__header">
+            <div class="Mobile-menu__header-left">
+                <button class="Mobile-menu__burger"></button>
+                <div class="Mobile-menu__group">
+                    <a href="#"><img src="Icons/Group.svg" alt="Logo"></a>
+                </div>
+            </div>
+            <button class="Mobile-menu__header-right"></button>
+        </div>
+        <div class="Mobile-menu__main-container">
+            <div class="Mobile-menu__links">
+                <ul class="Mobile-menu__container">
+                    <li><a class="active" href="#">Ремонт техники</a></li>
+                    <li><a href="#">Услуги и сервисы</a></li>
+                    <li><a href="#">Корпоративным клиентам</a></li>
+                    <li><a href="#">Продавцам техники</a></li>
+                    <li><a href="#">Партнерам</a></li>
+                    <li><a href="#">Производителям</a></li>
+                    <li><a href="#">Наши сервисные центры</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+            </div>
+
+            <div class="Mobile-menu__footer footer">
+                <div class="footer__buttons">
+                    <button class="footer_button-call"></button>
+                    <button class="footer_button-message"></button>
+                    <button class="footer_button-profile"></button>
+                </div>
+                <div class="footer__email">
+                    mail@cps.com
+                </div>
+                <div class="footer__phone">
+                    8 800 890 8900
+                </div>
+                <div class="footer__radio">
+                    <label class="footer_radio-label">
+                        <input checked type="radio" name="language" value="yes">
+                        <span>RU</span>
+                    </label>
+                    <label class="footer_radio-label">
+                        <input type="radio" name="language" value="yes">
+                        <span>EN</span>
+                    </label>
+                    <label class="footer_radio-label">
+                        <input type="radio" name="language" value="yes">
+                        <span>CN</span>
+                    </label>
+                </div>
+            </div>
+        </div>
+    </div>
+
 </body>
 
 </html>
