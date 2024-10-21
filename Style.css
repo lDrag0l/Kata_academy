@@ -192,6 +192,9 @@ body {
     height: 100vh;
     max-height: 1024px;
     background-color: #FFFFFF;
+    box-shadow:
+        16px 0 52px 0 #0E185033,
+        -2px 0 4px 0 #454F7E05;
 }
 
 .Mobile-menu__header {
