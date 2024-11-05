@@ -205,49 +205,41 @@ body {
     align-items: center;
 }
 
-.Mobile-menu__header-left {
+.Mobile-menu__wrapper-left {
     display: flex;
     align-items: center;
     gap: 16px;
 }
 
-.Mobile-menu__burger {
+.Mobile-menu__button {
     display: block;
+    width: 40px;
+    height: 40px;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+    transition-property: opacity;
+    transition-duration: 400ms;
+}
+
+.Mobile-menu__button:hover {
+    opacity: 0.7;
+}
+
+.Mobile-menu__button--burger {
     background-image: url("./Icons/burger-off.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition-property: opacity;
-    transition-duration: 400ms;
 }
 
-.Mobile-menu__burger:hover {
-    opacity: 0.7;
-}
-
-.Mobile-menu__header-right {
-    display: block;
+.Mobile-menu__button--find {
     background-image: url("./Icons/search.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-    transition-property: opacity;
-    transition-duration: 400ms;
 }
 
-.Mobile-menu__header-right:hover {
-    opacity: 0.7;
-}
 
 .Mobile-menu__links {
     margin-top: 20px;
@@ -321,37 +313,25 @@ body {
     opacity: 0.7;
 }
 
-.footer_button-call {
-    display: block;
+.Mobile-menu__button--call {
     background-image: url("./Icons/call.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
 }
 
-.footer_button-message {
-    display: block;
+.Mobile-menu__button--message {
     background-image: url("./Icons/chat.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
 }
 
-.footer_button-profile {
-    display: block;
+.Mobile-menu__button--profile {
     background-image: url("./Icons/profile.svg");
     background-repeat: no-repeat;
     background-position: 50% 50%;
     background-color: #FFFFFF;
-    width: 40px;
-    height: 40px;
-    cursor: pointer;
 }
 
 .footer__email {
